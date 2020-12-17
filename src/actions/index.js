@@ -8,3 +8,8 @@ export const getFoodsSuccess = (masterFoodList) => ({
   type: c.GET_FOODS_SUCCESS,
   masterFoodList
 });
+
+export const getFoodsFailure = (error) => ({
+  type: c.GET_FOODS_FAILURE,
+  error
+});
