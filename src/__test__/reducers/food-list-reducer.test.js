@@ -29,6 +29,7 @@ describe('FoodListReducer', () => {
     action = {
       type: c.REQUEST_FOODS
     };
+    console.log(action);
     expect(foodListReducer(defaultState, action)).toEqual({
       isLoading: true,
       masterFoodList: [],
@@ -36,10 +37,10 @@ describe('FoodListReducer', () => {
     });
   });
   test('successfully getting foods should change isLoading to false and update foods', () => {
-    const masterFoodList = "Peach";
+    const foodList = "Peach";
     action = {
       type: c.GET_FOODS_SUCCESS,
-      masterFoodList
+      masterFoodList: foodList
     };
     expect(foodListReducer(loadingState, action)).toEqual({
       isLoading: false,
