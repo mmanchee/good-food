@@ -9,7 +9,7 @@ describe('foodList reducer actions', () => {
   });
   it('getFoodsSuccess should create GET_FOODS_SUCCESS action', () => {
     const masterFoodList = "Peach";
-    expect(actions.getFoodsSuccess(headlines)).toEqual({
+    expect(actions.getFoodsSuccess(masterFoodList)).toEqual({
       type: c.GET_FOODS_SUCCESS,
       masterFoodList
     });
