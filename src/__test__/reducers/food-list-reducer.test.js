@@ -1,14 +1,21 @@
-import foodControlReducer from '../../reducers/food-control-reducer';
+import FoodListReducer from '../../reducers/food-list-reducer';
 
-describe('foodControlReducer', () => {
+describe('FoodListReducer', () => {
 
   const defaultState = {
     isLoading: false,
-    foodList: [],
+    masterFoodList: [],
     error: null
   };
 
   test('should successfully return the default state if no action is passed into it', () => {
-    expect(parksReducer(defaultState, {type: null })).toEqual({
-      return 
-})
+    expect(parksReducer(defaultState, {type: null })).toEqual(
+      {
+        isLoading: false,
+        masterFoodList: [],
+        error: null
+      }
+    );
+  });
+
+});
