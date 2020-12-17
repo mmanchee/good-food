@@ -47,5 +47,18 @@ describe('FoodListReducer', () => {
       masterFoodList: "Peach",
       error: null
     });
-  }); 
+  });
+  test('failing to get foods should change isLoading to false and add an error message', () => {
+    const error = "An error";
+    action = {
+      type: c.GET_FOODS_FAILURE,
+      error
+    };
+    expect(foodListReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      masterFoodList: [],
+      error: "An error"
+    });
+  });
+  
 });
