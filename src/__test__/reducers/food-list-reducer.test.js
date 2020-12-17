@@ -20,7 +20,7 @@ describe('FoodListReducer', () => {
       }
     );
   });
-  test('request foods should successfully cahnge isLoading to true', () => {
+  test('request foods should successfully change isLoading to true', () => {
     action = {
       type: c.REQUEST_FOODS
     };
@@ -30,5 +30,5 @@ describe('FoodListReducer', () => {
       error: null
     });
   });
-  
+
 });
