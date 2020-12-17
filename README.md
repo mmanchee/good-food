@@ -194,6 +194,7 @@ Issue Data
 
 Other Links
 [JsonSerialization](https://dev.to/thebuzzsaw/converting-dictionaries-in-system-text-json-474b)
+[Entity Framework Raw SQL](https://docs.microsoft.com/en-us/ef/core/querying/raw-sql)
 
 #### [Epicodus](https://www.epicodus.com/)
 >"A school for tech careers... to help people learn the skills they need to get great jobs."
