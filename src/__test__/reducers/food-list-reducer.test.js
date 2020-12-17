@@ -1,6 +1,9 @@
 import foodListReducer from '../../reducers/food-list-reducer';
+import * as c from './../../actions/ActionTypes';
 
 describe('FoodListReducer', () => {
+
+  let action;
 
   const defaultState = {
     isLoading: false,
@@ -17,5 +20,15 @@ describe('FoodListReducer', () => {
       }
     );
   });
-
+  test('request foods should successfully cahnge isLoading to true', () => {
+    action = {
+      type: c.REQUEST_FOODS
+    };
+    expect(foodListReducer(defaultState, action)).toEqual({
+      isLoading: true,
+      masterFoodList: [],
+      error: null
+    });
+  });
+  
 });
