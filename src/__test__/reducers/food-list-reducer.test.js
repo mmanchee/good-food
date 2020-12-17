@@ -1,4 +1,4 @@
-import FoodListReducer from '../../reducers/food-list-reducer';
+import foodListReducer from '../../reducers/food-list-reducer';
 
 describe('FoodListReducer', () => {
 
@@ -9,7 +9,7 @@ describe('FoodListReducer', () => {
   };
 
   test('should successfully return the default state if no action is passed into it', () => {
-    expect(parksReducer(defaultState, {type: null })).toEqual(
+    expect(foodListReducer(defaultState, {type: null })).toEqual(
       {
         isLoading: false,
         masterFoodList: [],
