@@ -10,6 +10,11 @@ describe('FoodListReducer', () => {
     masterFoodList: [],
     error: null
   };
+  const loadingState = {
+    isLoading: false,
+    masterFoodList: [],
+    error: null
+  };
 
   test('should successfully return the default state if no action is passed into it', () => {
     expect(foodListReducer(defaultState, {type: null })).toEqual(
@@ -30,5 +35,16 @@ describe('FoodListReducer', () => {
       error: null
     });
   });
-
+  test('successfully getting foods should change isLoading to false and update foods', () => {
+    const masterFoodList = "Peach";
+    action = {
+      type: c.GET_FOODS_SUCCESS,
+      masterFoodList
+    };
+    expect(foodListReducer(loadingState, action)).toEqual({
+      isLoading: false,
+      masterFoodList: "Peach",
+      error: null
+    });
+  }); 
 });
