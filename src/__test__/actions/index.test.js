@@ -14,5 +14,11 @@ describe('foodList reducer actions', () => {
       masterFoodList
     });
   });
-
+  it('getFoodsFailure should create GET_FOODS_FAILURE action', () => {
+    const error = "An error";
+    expect(actions.getFoodsFailure(error)).toEqual({
+      type: c.GET_FOODS_FAILURE,
+      error
+    });
+  });
 });
