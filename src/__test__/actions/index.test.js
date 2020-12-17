@@ -7,5 +7,12 @@ describe('foodList reducer actions', () => {
       type: c.REQUEST_FOODS
     });
   });
+  it('getFoodsSuccess should create GET_FOODS_SUCCESS action', () => {
+    const masterFoodList = "Peach";
+    expect(actions.getFoodsSuccess(headlines)).toEqual({
+      type: c.GET_FOODS_SUCCESS,
+      masterFoodList
+    });
+  });
 
 });
