@@ -1,9 +1,9 @@
 import React from 'react';
-import FoodControl from './FoodControl';
+import FoodControl from './Foods/FoodControl';
 import Header from './Header';
 import Footer from './Footer';
-import Signin from "./Signin";
-import Signup from './Signup';
+import Signin from "./Auth/Signin";
+import Signup from './Auth/Signup';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
