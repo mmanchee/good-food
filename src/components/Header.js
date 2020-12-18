@@ -1,10 +1,17 @@
 import React from "react";
+import { useHistory } from 'react-router-dom';
 
 function Header(){
+
+  const history = useHistory();
   return (
-    <div id="header"> 
-      <p id="header-title">Good Food</p>
-    </div>
+    <React.Fragment>
+      <div id="header"> 
+        <p id="header-title">Good Food</p>
+      </div>
+      <button onClick={history.push('/home')}>Home</button>
+    </React.Fragment>
+    
   );
 }
 
