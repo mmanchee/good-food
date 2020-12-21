@@ -16,6 +16,7 @@ export const getFoodsFailure = (error) => ({
 
 export const showModal = (modalType) => ({
   type: c.SHOW_MODAL,
+  modalProps,
   modalType
 });
 
