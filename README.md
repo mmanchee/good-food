@@ -150,6 +150,31 @@ If you have any feedback or concerns, please contact me.
 
   You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 ------------------------------
+### Work TimeLine
+
+[BadFoodAPI](https://github.com/mmanchee/BadFoodApi)
+
+| Date | Hours | Notes |
+|--------|:------:|:-----:|
+| 11/21 | 2 | Planning and researching |
+| 11/22 | 3 | Planning and researching |
+| 11/24 | 6 | Researching and begin CSV |
+| 11/25 | 6 | Work on CSV |
+| 11/27 | 6 | Work on CSV |
+| 11/29 | 3 | Diagraming  |
+| 12/2 | 3 | Histamine research |
+| 12/4 | 2 | Work on CSV |
+| 12/6 | 4 | Allergy and Intolerance research |
+| 12/10 | 2 | Allergy and Intolerance research  |
+| 12/11 | 8 | Start C# API  |
+| 12/12 | 4 | Temp solution for API |
+| 12/13 | 3 | Work on CSV |
+| 12/16 | 3 | Fix API to create Food List |
+| 12/17 | 5 | Start React Front End |
+| 12/18 |  |   |
+|  |  |   |
+|  |  |   |
+|  |  |   |
 
 ### ⚖️ License
 
