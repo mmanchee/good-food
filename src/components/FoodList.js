@@ -23,5 +23,17 @@ function FoodList(props) {
         })}
       </React.Fragment>
     )
+  } else {
+    return (
+      <React.Fragment>
+        <p>Loading...</p>
+      </React.Fragment>
+    )
   }
 }
+
+FoodList.propTypes = {
+  onFoodSelection: PropTypes.func
+}
+
+export default FoodList;
