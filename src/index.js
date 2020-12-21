@@ -17,8 +17,8 @@ const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, middlewa
 const rrfProps = {
   firebase,
   config: {
-        userProfile: "users",
-        useFirestoreForProfile: true,
+      userProfile: "users",
+      useFirestoreForProfile: true,
     },
   dispatch: store.dispatch,
   createFirestoreInstance
