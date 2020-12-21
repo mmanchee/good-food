@@ -17,10 +17,7 @@ function FoodList(props) {
           return <Food 
             whenFoodClicked = { props.onFoodSelection }
             name={food.name}
-            category={food.category}
-            subCategory={food.subCategory}
             description={food.description}
-            fdcid={food.fcdid}
             id={food.id}
             key={food.id} />
         })}
