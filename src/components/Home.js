@@ -8,15 +8,19 @@ function Home() {
   function redirect(cURL) {
     switch (cURL) {
       case "food":
-        history.pushState('/foodControl');
+        history.push('/foodControl');
+        break;
       case "event":
-        history.pushState('/event');
+        history.push('/event');
+        break;
       case "calendar":
-        history.pushState('/calendar');
+        history.push('/calendar');
+        break;
       case "account":
-        history.pushState('/account');
+        history.push('/account');
+        break;
       default:
-        history;
+        history.push('/');
 
     }
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default class Modal extends Component {
   listenKeyboard(event) {
-    if(eventkey === 'Escape' || event.keyCode === 27) {
+    if(event.key === 'Escape' || event.keyCode === 27) {
       this.props.onClose();
     }
   }

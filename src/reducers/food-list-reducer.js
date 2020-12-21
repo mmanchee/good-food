@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
         isLoading: false,
         masterFoodList: action.masterFoodList
       });
-    case c. GET_FOODS_FAILURE:
+    case c.GET_FOODS_FAILURE:
       return Object.assign({}, state, {
         isLoading: false,
         error: action.error

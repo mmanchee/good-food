@@ -13,7 +13,7 @@ export default function (state = initialModalState, action) {
     case c.HIDE_MODAL:
       return initialModalState;
     default: 
-    return state;
+      return state;
   }
   return newState;
 }

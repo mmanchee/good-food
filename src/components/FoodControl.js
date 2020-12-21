@@ -1,5 +1,6 @@
 import React from 'react';
 import FoodList from './FoodList';
+import Modal from './Modal'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import * as a from './../actions';
@@ -28,7 +29,9 @@ class FoodControl extends React.Component {
     if ((isLoaded(auth)) && (auth.currentUser == null)) {
       return (
         <React.Fragment>
-          <p>login</p>
+          <Modal>
+            <p>login</p>
+          </Modal>
         </React.Fragment>
       )
     }

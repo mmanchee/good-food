@@ -4,6 +4,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Signin from "./Signin";
 import Signup from './Signup';
+import Home from './Home';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import firebase from 'firebase/app';
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <Router>
       <Header />
-      {/* <Switch>
+      <Switch>
         <Route path="/signin">
           <Signin />
         </Route>
@@ -26,7 +27,7 @@ function App() {
             <FoodControl />
           </div>
         </Route>
-      </Switch> */}
+      </Switch>
       <Footer />
     </Router>
   );
