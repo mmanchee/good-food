@@ -3,7 +3,7 @@ import { combineReducers } from 'redux';
 import { firestoreReducer } from 'redux-firestore';
 
 const rootReducer = combineReducers({
-  masterFoodList: ticketListReducer,
+  masterFoodList: FoodListReducer,
   firestore: firestoreReducer
 });
 

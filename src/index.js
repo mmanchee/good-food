@@ -10,13 +10,15 @@ import middlewareLogger from './middleware/middleware-logger';
 import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
 import { createFirestoreInstance } from 'redux-firestore';
 import firebase from "./firebase";
+import 'firebase/auth';
 
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, middlewareLogger));
 
 const rrfProps = {
   firebase,
   config: {
-        userProfile: "users"
+        userProfile: "users",
+        useFirestoreForProfile: true,
     },
   dispatch: store.dispatch,
   createFirestoreInstance

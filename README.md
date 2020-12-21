@@ -171,8 +171,8 @@ If you have any feedback or concerns, please contact me.
 | 12/13 | 3 | Work on CSV |
 | 12/16 | 3 | Fix API to create Food List |
 | 12/17 | 5 | Start React Front End |
-| 12/18 |  |   |
-|  |  |   |
+| 12/18 | 8 | Merge working CSV and API  |
+| 12/20 | 4 | Add Modal and api inputs  |
 |  |  |   |
 |  |  |   |
 
