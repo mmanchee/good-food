@@ -14,14 +14,14 @@ export const getFoodsFailure = (error) => ({
   error
 });
 
-export const showModal = (modalType) => {{
+export const showModal = (modalType) => ({
   type: c.SHOW_MODAL,
   modalType
-}};
+});
 
-export const hideModal = () => {{
-  type: HIDE_MODAL
-}};
+export const hideModal = () => ({
+  type: c.HIDE_MODAL
+});
 
 export  const  makeApiCall = (param, input) => {
   const ApiURL = "http://localhost:5003/api/";
@@ -54,7 +54,7 @@ export  const  makeApiCall = (param, input) => {
     }
   }
   return dispatch => {
-    dispatch(requestParks);
+    dispatch(requestFoods);
     return fetch(cURL, request)
       .then(response => response.json())
       .then(

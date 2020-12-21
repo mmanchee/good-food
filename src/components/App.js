@@ -5,12 +5,13 @@ import Footer from './Footer';
 import Signin from "./Signin";
 import Signup from './Signup';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import firebase from 'firebase/app';
 
 function App() {
   return (
     <Router>
       <Header />
-      <Switch>
+      {/* <Switch>
         <Route path="/signin">
           <Signin />
         </Route>
@@ -21,12 +22,12 @@ function App() {
           <Home />
         </Route>
         <Route path="/">
-        <div id="spacing">
-          <FoodControl />
-        </div>
-        <Footer />
+          <div id="spacing">
+            <FoodControl />
+          </div>
         </Route>
-      </Switch>
+      </Switch> */}
+      <Footer />
     </Router>
   );
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import { useFireStroeConnect, isLoaded } from 'react-redux-firebase';
+import Food from './Food';
 
 function FoodList(props) {
   useFireStroeConnect([
