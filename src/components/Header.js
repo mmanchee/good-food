@@ -4,7 +4,8 @@ import { useHistory } from 'react-router-dom';
 
 function Header(){
 
-const history = useHistory();
+  const history = useHistory();
+  
   return (
     <React.Fragment>
       <div id="header"> 

@@ -1,20 +1,17 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom';
+import Info from './Info';
+import Chart from './Chart';
+import Diet from './Diet';
 
-function Home() {
-
-  const history = useHistory();
-
-  let accountPage = "";
-
-  function redirect(cURL) {
-    accountPage = cURL;
-
-  }
-  render () {
+function Account() {
     let currentlyVisibleState = null;
     
-    switch (accountPage ) {
+    
+  const history = useHistory();
+
+  function redirect(cURL) {
+    switch ( cURL ) {
       case "info":     
         currentlyVisibleState = <Info />;
       case "chart": 
@@ -22,23 +19,23 @@ function Home() {
       case "diet":
         currentlyVisibleState = <Diet />;
       default:
-        accountPage = "";
-    }
-    return (
-      <React.Fragment>
-        <div className="account-menu">
-          <div className="account-menu-box">
-            <p id="account-title">Account Panel</p>
-            <button className="main-menu-button" onClick={redirect("info")}>Account Info</button>
-            <button className="main-menu-button" onClick={redirect("chart")}>Health Chart</button>
-            <button className="main-menu-button" onClick={redirect("diet")}>Diet Plan</button>
-          </div>
-        </div>
-        {currentlyVisibleState}
-      </React.Fragment>
-    )
+        cURL = "";
+      }
   }
-  
+
+  return (
+    <React.Fragment>
+      <div className="account-menu">
+        <div className="account-menu-box">
+          <p id="account-title">Account Panel</p>
+          <button className="main-menu-button" onClick={redirect("info")}>Account Info</button>
+          <button className="main-menu-button" onClick={redirect("chart")}>Health Chart</button>
+          <button className="main-menu-button" onClick={redirect("diet")}>Diet Plan</button>
+        </div>
+      </div>
+      {currentlyVisibleState}
+    </React.Fragment>
+  )
 }
 
-export default Home;
+export default Account;

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Issues from './SeedIssues';
+import * as Issues from './SeedIssues';
 
 function HealthChart(props) {
   return (
