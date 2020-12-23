@@ -6,7 +6,7 @@
     <!-- Project Avatar/Logo -->
     <br>
      <a href="https://github.com/mmanchee/GoodFood">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRg8aIzTS1I4DgL0ebgoa0vOWW16cXBqY4JBw&usqp=CAU">
+        <img src="./src/img/GoodFoodLogo.png">
     </a>
     </a>
     <p align="center">
@@ -74,9 +74,12 @@
 ### 📖 Description
 This project is made to display Good Food from a users allergies and intolerances. Everyone seems to have some issue with food from illness to taste or texture. This won't help with the later but I hope it will give some insight to the former. I used many scientific websites and documentation to come up with the information contained in this database but as science changes, so does our understanding of information. This information is as good as I can research as of December of 2020. Thank you.
 
+### Plans
+<img src='./src/img/GoodFoodPlan.png'>
+
 ### 🦠 Known Bugs
 
-* There are no known bugs at this time.
+* lots right now ... unfinish project
 
 ### 🛠 Built With
 * [Visual Studio Code](https://code.visualstudio.com/)
@@ -121,14 +124,7 @@ This project is made to display Good Food from a users allergies and intolerance
 
 ### 🔍 Preview
 
-* The app has features to add cargo.
-<img src="./src/img/">
-
-* The app allows you to see a list of cargo
-<img src="./src/img/">
-
-* The app allows for details and adding or subtracting quantities, as well as editing or deleting cargo.
-<img src="./src/img/">
+Check out the demo at [GitHub](https://github.com/mmanchee/good-food-demo)
 
 ### 🤝 Contributors
 
@@ -173,8 +169,9 @@ If you have any feedback or concerns, please contact me.
 | 12/17 | 5 | Start React Front End |
 | 12/18 | 8 | Merge working CSV and API  |
 | 12/20 | 4 | Add Modal and api inputs  |
-|  |  |   |
-|  |  |   |
+| 12/21 | 8 | More modal work and fleshed out  |
+| 12/22 | 8 | Switched to a demo because full version buggy |
+| 12/23 | 4 | clean up demo for presentation |
 
 ### ⚖️ License
 
